@@ -13,7 +13,7 @@ import javax.annotation.Resource;
 public class OrderNacosController {
     @Autowired
     private RestTemplate restTemplate;
-    @Value("${server-url.nacos-user-service")
+    @Value("${service-url.nacos-user-service}")
     private String serverUrl;
 
     @GetMapping("/consumer/payment/nacos/{id}")
